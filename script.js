@@ -10,11 +10,14 @@ async function getFilterGiveaways() {
   };
 
   const res = await axios.request(options);
+  document.getElementById("ga-list").innerHTML = res.data
+    .map(createCard)
+    .join("");
   console.log(res);
 }
 
-function createCard(info) {
-  document.getElementById("ga-list").innerHTML = info.data.title;
+function createCard(item) {
+  return `<li>Game: ${item.title}</li>`;
 }
 
 getFilterGiveaways();
