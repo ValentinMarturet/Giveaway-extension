@@ -1,0 +1,11 @@
+{
+  "name": "Game Giveaways",
+  "version": "1.0.0",
+  "description": "This extension shows you giveaways on real time",
+  "manifest_version": 3,
+  "author": "Valentín Marturet",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Game Giveaways"
+  }
+}
