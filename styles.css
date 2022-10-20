@@ -17,9 +17,7 @@ body {
   align-items: center;
 }
 .container {
-  margin: 0;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin: 18px;
   max-width: 500px;
 }
 
@@ -31,7 +29,7 @@ body {
 .grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, calc(50% - 9px));
 }
 
 .img {
