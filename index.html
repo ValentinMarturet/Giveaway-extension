@@ -4,12 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Game Giveaways!</title>
   </head>
   <body>
     <div>
-      <h2>Game Giveaways</h2>
-      <ul id="ga-list"></ul>
+      <div class="container flex">
+        <h2>Daily Game Giveaways</h2>
+        <button id="update-btn">reload</button>
+      </div>
+      <div id="ga-list" class="grid container">
+        <a href="" class="card">
+          <img
+            class="img"
+            src="https://www.gamerpower.com/offers/1/635032a3d1452.jpg"
+          />
+          <div class="title">
+            <h3>Titulo</h3>
+          </div>
+        </a>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>

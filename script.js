@@ -15,11 +15,19 @@ async function getFilterGiveaways() {
   document.getElementById("ga-list").innerHTML = result
     .map(createCard)
     .join("");
-  console.log(result);
+  // console.log(result);
 }
 
 function createCard(item) {
-  return `<li>Game: ${item.title}</li>`;
+  return `<a href="${item.open_giveaway}" class="card">
+            <img
+              class="img"
+              src="${item.thumbnail}"
+            />
+            <div class="title">
+              <h3>${item.title}</h3>
+            </div>
+          </a>`;
 }
 
 getFilterGiveaways();
